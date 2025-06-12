@@ -13,7 +13,7 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -25,33 +25,53 @@
     <div class="web-content">
       <h2>Hello, I'm James Angelo Bautista</h2>
       <p>A Web designer & developer</p>
-      <a href="#portfolio" class="btn">View My Work</a>
     </div>
   </section>
 
   <section class="skills-section">
-  <h2>My Skills</h2>
-  <button class="toggle-skills-btn">Show My Skills</button>
+  <h2>My Abilities</h2>
   <ul class="skills-list">
     <li>HTML5</li>
     <li>CSS3</li>
     <li>JavaScript</li>
     <li>Java</li>
     <li>Android Studio</li>
-    <li>Git & GitHub</li>
     <li>Responsive Web Design</li>
   </ul>
 </section>
 
+
   <section class="portfolio" id="portfolio">
-    <h2>My Projects</h2>
-    <div class="grid">
-      <div class="card">UntaRead</div>
-      <div class="card">UntaLoan</div>
-      <div class="card">Hakari</div>
-      <div class="card">Restaurant Management System</div>
+  <h2>My Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3 class="project-title">Cafe Capi</h3>
+      <div class="project-info" style="display: none;">
+        <p class="project-description">This is Project was a Activity in one of our Computer Laboratory classes demonstrating Ui design and Responsiveness Using only CSS and HTML.</p>
+        <img class="project-image" src="images/project1.png" alt="Project One image">
+      </div>
+      <button class="show-project-details-btn">Show Details</button>
     </div>
-  </section>
+
+    <div class="card">
+      <h3 class="project-title">Restaurant Management System</h3>
+      <div class="project-info" style="display: none;">
+        <p class="project-description">This is Project on our Database Management Subject, Which is making a DBMS (Database Management System) of our choosing It is made with SQL, PHP, HTML, CSS and JavaScript.</p>
+        <img class="project-image" src="RMS.png" alt="Project Two image">
+      </div>
+      <button class="show-project-details-btn">Show Details</button>
+    </div>
+  </div>
+
+  <!-- Detail Card Below All Projects -->
+  <div class="project-details-card hidden">
+    <h3 id="details-title"></h3>
+    <img id="details-image" src="" alt="Project image">
+    <p id="details-description"></p>
+    <button id="close-details-btn">Close</button>
+  </div>
+</section>
+
 
   <section class="about" id="about">
     <h2>About Me</h2>
