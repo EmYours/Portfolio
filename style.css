@@ -16,7 +16,7 @@ body {
 /* Navbar */
 .navbar {
   background: #1f1f1f;
-  padding: 16px 0;
+  padding: 1rem 0;
   border-bottom: 1px solid #333;
 }
 
@@ -24,21 +24,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 2rem;
   flex-wrap: wrap;
 }
 
 .navbar .logo {
-  font-size: 28.8px;
+  font-size: 1.8rem;
   color: #00ffff;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 .navbar ul li a {
@@ -59,25 +59,25 @@ body {
   height: 90vh;
   background: linear-gradient(to right, #1e1e1e, #2c2c2c);
   text-align: center;
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 
 .web-content h2 {
-  font-size: 40px;
-  margin-bottom: 16px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .web-content p {
-  font-size: 19.2px;
-  margin-bottom: 32px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
   background: #00ffff;
   color: #121212;
-  padding: 12.8px 24px;
+  padding: 0.8rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
@@ -90,26 +90,26 @@ body {
 
 /* Portfolio */
 .portfolio {
-  padding: 64px 16px;
+  padding: 4rem 1rem;
   background: #181818;
   text-align: center;
 }
 
 .portfolio h2 {
-  font-size: 32px;
-  margin-bottom: 32px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
   background: #2a2a2a;
-  padding: 32px;
-  border-radius: 8px;
+  padding: 2rem;
+  border-radius: 0.5rem;
   transition: transform 0.3s;
 }
 
@@ -119,59 +119,60 @@ body {
 
 /* About */
 .about {
-  padding: 64px 16px;
+  padding: 4rem 1rem;
   background: #121212;
   text-align: center;
 }
 
 .about h2 {
-  font-size: 32px;
-  margin-bottom: 16px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about p {
-  max-width: 700px;
+  max-width: 43.75rem;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 
 /* Contact */
 .contact {
-  padding: 64px 16px;
+  padding: 4rem 1rem;
   background: #1a1a1a;
   text-align: center;
 }
 
 .contact h2 {
-  font-size: 32px;
-  margin-bottom: 16px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 form {
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 0 16px;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
-input, textarea {
-  padding: 12.8px;
+input,
+textarea {
+  padding: 0.8rem;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
   background: #2f2f2f;
   color: white;
 }
 
 button {
-  padding: 12.8px;
+  padding: 0.8rem;
   border: none;
   background: #00ffff;
   color: #121212;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -188,7 +189,7 @@ button:hover {
   list-style: none;
   padding: 1rem 0 0 0;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 25rem;
   text-align: left;
 }
 
@@ -196,61 +197,55 @@ button:hover {
   background-color: #2a2a2a;
   margin-bottom: 0.5rem;
   padding: 0.6rem 1rem;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
-/* Remove animation-related classes if you want */
 .skills-list.show,
 .skills-list.static {
   max-height: none;
   padding-top: 1rem;
 }
 
-
 .project-details-card {
   background-color: #2a2a2a;
   color: #ffffff;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin-top: 2rem;
   text-align: center;
-  max-width: 800px;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 0.625rem rgba(0, 255, 255, 0.1);
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   transition: opacity 0.4s ease, transform 0.4s ease;
   overflow: hidden;
 }
 
-/* Show animation */
 .project-details-card:not(.hidden) {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Hidden class to toggle visibility */
 .project-details-card.hidden {
   display: none;
 }
 
-/* Image inside the card */
 .project-details-card img {
   max-width: 100%;
   height: auto;
   margin-top: 1rem;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
-/* Close button */
 #close-details-btn {
   margin-top: 1.5rem;
   padding: 0.7rem 1.5rem;
   background-color: #00ffff;
   color: #121212;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
@@ -261,7 +256,7 @@ button:hover {
 }
 
 /* Optional: Adjust for small screens */
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .project-details-card {
     padding: 1.5rem 1rem;
   }
@@ -278,20 +273,22 @@ button:hover {
 /* Footer */
 footer {
   background: #101010;
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
-  font-size: 14.4px;
+  font-size: 0.9rem;
   border-top: 1px solid #333;
 }
 
 /* Responsive Tweaks */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .web-content h2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
+
   .web-content p {
-    font-size: 16px;
+    font-size: 1rem;
   }
+
   .navbar ul {
     justify-content: center;
   }
