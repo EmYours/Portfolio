@@ -68,6 +68,22 @@ body {
   text-align: center;
   padding: 0 1rem;
 }
+.web-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.profile-photo {
+  width: 300px;
+  height: auto;
+  margin-bottom: -1.1rem; /* Pull the heading up by overlapping */
+  z-index: 2;
+  position: relative;
+}
 
 .web-content h2 {
   font-size: 2.5rem;
